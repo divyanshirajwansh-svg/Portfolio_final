@@ -1,0 +1,188 @@
+{
+  "profile": {
+    "name": "Divyanshi Rajwansh",
+    "enrollmentNo": "25BCON2473",
+    "designation": "B.Tech Student | Aspiring Software Engineer | Content Creator",
+    "university": "JECRC University, Jaipur",
+    "degree": "Bachelor of Technology in Computer Science and Engineering (B.Tech CSE Core)",
+    "location": "Jaipur & Nainital, India",
+    "email": "divyanshirajwansh@gmail.com",
+    "github": "https://github.com/divyanshirajwansh-svg",
+    "githubRepos": {
+      "portfolio": "https://github.com/divyanshirajwansh-svg/Portfolio",
+      "pythonCollection": "https://github.com/divyanshirajwansh-svg/Python-programs-collection-"
+    },
+    "linkedin": "https://www.linkedin.com/in/divyanshi-rajwansh-4464b9283",
+    "googleSitesPortfolio": "https://sites.google.com/view/divyanshirajwanshportfolio2473",
+    "tagline": "Where technology meets creativity, and every idea holds a little sunshine.",
+    "supportingLine": "Learning to build with code, creating with purpose, and finding a little magic in the process.",
+    "bio": "Divyanshi Rajwansh is an undergraduate Computer Science and Engineering student at JECRC University, Jaipur. She blends analytical problem-solving with creative visual storytelling. Beside her academic journey in programming, data structures, and web technologies, she serves on the official university social media team, crafting video concepts, scripts, and digital content.",
+    "education": [
+      {
+        "institution": "JECRC University, Jaipur",
+        "degree": "B.Tech in Computer Science and Engineering (Core)",
+        "period": "2025 – Present"
+      },
+      {
+        "institution": "Inspiration Senior Secondary School, Nainital",
+        "degree": "Higher Secondary Education (PCM)",
+        "period": "2024 – 2025"
+      }
+    ],
+    "languages": ["English", "Hindi", "French"]
+  },
+  "skills": {
+    "programmingAndDevelopment": [
+      "Python",
+      "C Language",
+      "Data Structures & Algorithms (C & C++)",
+      "SQL / MySQL Basics"
+    ],
+    "webTechnologies": [
+      "HTML5 & Semantic Web",
+      "Vanilla CSS3 & Modern Design Systems",
+      "JavaScript (ES6+)",
+      "Responsive Layouts",
+      "Vercel Deployment"
+    ],
+    "aiAssistedDevelopment": [
+      "Cursor AI (Context-aware debugging & refactoring)",
+      "Prompt Engineering",
+      "ChatGPT",
+      "GitHub Copilot",
+      "Google Gemini"
+    ],
+    "creativeContentAndStorytelling": [
+      "Scriptwriting & Concept Development",
+      "Video Editing & Visual Storytelling",
+      "Canva",
+      "DaVinci Resolve / Premiere",
+      "Notion for Editorial Workflows",
+      "Official University Social Media Content"
+    ]
+  },
+  "projects": [
+    {
+      "id": "python-collection",
+      "title": "Python Programs Collection",
+      "category": "python",
+      "tags": ["Python", "Algorithms", "Data Structures", "Git"],
+      "summary": "A core algorithmic Python collection featuring factorial calculations (iterative & recursive), Fibonacci sequence generator with memoization, and structure-to-dictionary conversion tools with comprehensive documentation.",
+      "details": "This repository showcases fundamental programming logic and data structure manipulations in Python. It includes a recursive and iterative factorial calculator with boundary validation, a Fibonacci series generator capable of dynamic memoization, an automated structure/tuple-to-dictionary transformation utility, and a clean, structured README repository guide.",
+      "github": "https://github.com/divyanshirajwansh-svg/Python-programs-collection-",
+      "demoType": "code-preview",
+      "highlights": [
+        "Iterative & recursive factorial with integer validation",
+        "Fibonacci generator supporting n-terms and memoization",
+        "Nested data structure to Python dictionary parser",
+        "Clean PEP 8 formatting with unit examples"
+      ]
+    },
+    {
+      "id": "python-refactor",
+      "title": "Messy Python Code Improvement",
+      "category": "python",
+      "tags": ["Python", "AI Refactoring", "PEP 8", "Code Quality"],
+      "summary": "AI-assisted transformation of unformatted, monolithic legacy Python code into clean, modular, and PEP 8-compliant functions with explicit type hinting and robust exception handling.",
+      "details": "Demonstrates systematic refactoring of a tangled, single-block Python script using structured prompt engineering. The refactored version breaks monoliths into single-responsibility functions, replaces magic numbers with descriptive constants, introduces type annotations, and incorporates defensive try-except blocks.",
+      "github": "https://github.com/divyanshirajwansh-svg/Messy-code-python",
+      "demoType": "diff-viewer",
+      "highlights": [
+        "Decomposed monolithic logic into reusable functions",
+        "Added type hints (typing module) and docstrings",
+        "Standardized variable naming to PEP 8 snake_case",
+        "Safe error handling preventing unhandled crashes"
+      ]
+    },
+    {
+      "id": "cursor-debugging",
+      "title": "Bug Fixing Using Cursor AI",
+      "category": "ai",
+      "tags": ["Cursor AI", "Debugging", "Prompt Engineering", "Python"],
+      "summary": "Targeted identification and resolution of subtle edge-case bugs, off-by-one errors, and unhandled index exceptions in algorithmic code using Cursor AI's context-aware codebase analysis.",
+      "details": "Highlights the practical use of Cursor AI as an intelligent pair programmer during academic lab work. By prompting the model with execution trace logs and boundary condition tests, edge-case bugs (such as zero-length input crashes and off-by-one boundary conditions) were pinpointed and resolved with surgical patches.",
+      "github": "https://github.com/divyanshirajwansh-svg/Buggy-Code-",
+      "demoType": "debug-walkthrough",
+      "highlights": [
+        "Identified hidden off-by-one index boundaries",
+        "Utilized Cursor AI chat with contextual prompt instructions",
+        "Added test boundary assertions to verify fix stability",
+        "Documented root-cause analysis in lab notes"
+      ]
+    },
+    {
+      "id": "interactive-quiz",
+      "title": "Interactive Quiz Application",
+      "category": "web",
+      "tags": ["JavaScript", "HTML5", "CSS3", "Lecture 10"],
+      "summary": "A dynamic web quiz application developed in Lecture 10 featuring interactive Tech and General Knowledge question banks, real-time score calculation, immediate answer explanations, and progress tracking.",
+      "details": "Engineered during Lecture 10 practical sessions, this application presents multiple-choice questions spanning Computer Science fundamentals (CPU, HTTP, OS, AI) and General Knowledge. Features include instant visual feedback upon selection, calculated performance summaries, and keyboard-accessible navigation.",
+      "github": "https://github.com/divyanshirajwansh-svg/Interactive-Quiz-",
+      "demoType": "live-quiz",
+      "highlights": [
+        "Dynamic question loading from structured dataset",
+        "Instant visual validation (green for correct, red for incorrect)",
+        "Progress bar with question counter and percentage tally",
+        "Final score recap with cheerful encouragement"
+      ]
+    },
+    {
+      "id": "reading-list",
+      "title": "Book Reading List Application",
+      "category": "web",
+      "tags": ["JavaScript", "LocalStorage", "Lecture 11", "Web App"],
+      "summary": "A lightweight personal reading tracker developed in Lecture 11 allowing users to categorize books by status ('Want to Read', 'Currently Reading', 'Finished'), record personal ratings, and persist reading goals across browser sessions.",
+      "details": "Built as part of Lecture 11 practical requirements, this productivity tool empowers students to organize their reading backlog. Features include status filtering tabs, dynamic book card generation, star rating input, and automatic browser localStorage synchronization so data is never lost on refresh.",
+      "github": "https://github.com/divyanshirajwansh-svg/reading-list-app",
+      "demoType": "live-reading-list",
+      "highlights": [
+        "Complete CRUD operations for book entries",
+        "Filter pills for Want to Read, Reading, and Completed",
+        "Persistent client-side storage via browser localStorage",
+        "Responsive card grid with clean, calm visual hierarchy"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "triggers": ["who are you", "who is divyanshi", "about divyanshi", "tell me about divyanshi", "introduce"],
+      "answer": "Divyanshi Rajwansh is a B.Tech Computer Science and Engineering student at JECRC University, Jaipur, as well as an aspiring software engineer and digital content creator. She loves combining algorithmic logic with creative storytelling, and is part of the university's official social media team! ☀️"
+    },
+    {
+      "triggers": ["skills", "technical skills", "technologies", "tech stack", "what can she do"],
+      "answer": "Divyanshi's technical toolkit includes Python, C Language, Data Structures & Algorithms, and modern Web Technologies (HTML5, CSS3, JavaScript). She actively uses AI-assisted workflows like Cursor AI, Prompt Engineering, ChatGPT, and Copilot, alongside creative tools such as Canva, DaVinci Resolve, and Notion. ✨"
+    },
+    {
+      "triggers": ["projects", "what projects", "built", "portfolio projects", "work"],
+      "answer": "Divyanshi has five featured projects in this portfolio: 1) Python Programs Collection, 2) Messy Python Code Improvement (AI-assisted refactoring), 3) Bug Fixing Using Cursor AI, 4) Interactive Quiz Application (Lecture 10), and 5) Book Reading List Application (Lecture 11). You can search and filter them directly in the Projects section above! 💻"
+    },
+    {
+      "triggers": ["python programs collection", "factorial", "fibonacci", "structure to dictionary"],
+      "answer": "The Python Programs Collection repository brings together core algorithmic solutions: recursive and iterative factorial computation, Fibonacci series generation with memoization, structure-to-dictionary conversion, and clean documentation on her GitHub! 🐍"
+    },
+    {
+      "triggers": ["messy python", "code improvement", "refactoring", "pep 8"],
+      "answer": "In the Messy Python Code Improvement project, Divyanshi used AI-assisted prompt engineering to transform a tangled, monolithic Python script into modular, PEP 8-compliant functions with explicit type hinting and defensive exception handling! 🌿"
+    },
+    {
+      "triggers": ["cursor", "cursor ai", "bug fixing", "bug"],
+      "answer": "Using Cursor AI, Divyanshi diagnosed and resolved subtle runtime edge cases and index boundary errors in algorithmic code. By feeding stack traces and boundary test cases into Cursor AI, she generated precision patches with root-cause analysis! 🔍"
+    },
+    {
+      "triggers": ["quiz", "interactive quiz", "lecture 10"],
+      "answer": "The Interactive Quiz Application was developed in Lecture 10. It features multiple-choice challenges across Tech and General Knowledge with immediate feedback, real-time score tracking, and keyboard accessibility. You can even try it live on this page! 🎯"
+    },
+    {
+      "triggers": ["reading list", "book", "lecture 11", "books"],
+      "answer": "Developed in Lecture 11, the Book Reading List Application allows readers to manage reading backlogs, track books across 'Want to Read', 'Reading', and 'Finished' states, assign ratings, and persist progress in localStorage! 📚"
+    },
+    {
+      "triggers": ["github", "repository", "code link", "github link"],
+      "answer": "You can explore all of Divyanshi's code on her official GitHub profile at https://github.com/divyanshirajwansh-svg ! 🚀"
+    },
+    {
+      "triggers": ["contact", "email", "reach out", "connect", "hire"],
+      "answer": "You can reach Divyanshi directly via email at divyanshirajwansh@gmail.com, connect on LinkedIn (divyanshi-rajwansh), or send a message using the Contact section at the bottom of this page! 💌"
+    }
+  ]
+}

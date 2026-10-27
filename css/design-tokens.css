@@ -1,0 +1,126 @@
+/* ==========================================================================
+   DESIGN TOKENS - DIVYANSHI RAJWANSH PORTFOLIO
+   Coastal Editorial Aesthetic: Sunshine, Periwinkle, Sea-Glass, Soft Ivory
+   ========================================================================== */
+
+:root {
+  /* Brand Palette (Light Mode Default) */
+  --color-periwinkle: #B9C8F0;
+  --color-seaglass: #D8EDF0;
+  --color-beige: #E8DCC8;
+  --color-ivory: #FFFDF7;
+  --color-deep-blue: #30394B;
+  --color-muted-teal: #356C80;
+  --color-sunshine: #F3C969;
+  --color-sunshine-warm: #E6A14D;
+  --color-coral-soft: #F2A29B;
+  --color-sage-soft: #A8D5BA;
+
+  /* Theme-Aware Semantic Variables - LIGHT THEME */
+  --bg-primary: #FFFDF7;
+  --bg-secondary: #F6F3EB;
+  --bg-card: rgba(255, 253, 247, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --bg-card-subtle: #FAF6EE;
+  --bg-glass: rgba(255, 253, 247, 0.72);
+  --bg-glass-heavy: rgba(255, 253, 247, 0.92);
+
+  --text-primary: #30394B;
+  --text-secondary: #57657E;
+  --text-muted: #7E8DA5;
+  --text-on-accent: #FFFFFF;
+
+  --accent-primary: #356C80;
+  --accent-primary-hover: #295464;
+  --accent-secondary: #B9C8F0;
+  --accent-subtle: #D8EDF0;
+  --accent-warm: #E8DCC8;
+  --accent-sunshine: #F3C969;
+
+  --border-color: rgba(53, 108, 128, 0.16);
+  --border-light: rgba(185, 200, 240, 0.45);
+  --border-focus: #356C80;
+
+  --shadow-sm: 0 2px 8px rgba(48, 57, 75, 0.05);
+  --shadow-md: 0 8px 24px rgba(48, 57, 75, 0.08);
+  --shadow-lg: 0 16px 40px rgba(48, 57, 75, 0.12);
+  --shadow-glass: 0 8px 32px 0 rgba(53, 108, 128, 0.08);
+
+  --gradient-coastal: linear-gradient(135deg, #FFFDF7 0%, #D8EDF0 50%, #B9C8F0 100%);
+  --gradient-sunshine: linear-gradient(135deg, #F3C969 0%, #E6A14D 100%);
+  --gradient-hero: radial-gradient(circle at 80% 20%, rgba(216, 237, 240, 0.6) 0%, rgba(185, 200, 240, 0.35) 45%, rgba(255, 253, 247, 0) 70%),
+                   radial-gradient(circle at 10% 80%, rgba(232, 220, 200, 0.5) 0%, rgba(255, 253, 247, 0) 60%);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+  --font-signature: 'Allura', 'Parisienne', 'Great Vibes', cursive;
+  --font-tagline-cursive: 'Caveat', 'Allura', cursive;
+  --font-script: 'Alex Brush', 'Caveat', cursive;
+
+  /* Spacing Scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   DARK THEME PALETTE
+   Refined Deep Blue-Grey with Soft Sea-Glass and Periwinkle Accents
+   Comfortable Contrast, Never Pure Pitch Black
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --bg-primary: #181F2B;
+  --bg-secondary: #1F2737;
+  --bg-card: rgba(31, 39, 55, 0.85);
+  --bg-card-hover: rgba(38, 48, 68, 0.95);
+  --bg-card-subtle: #242D3F;
+  --bg-glass: rgba(27, 34, 48, 0.78);
+  --bg-glass-heavy: rgba(24, 31, 43, 0.94);
+
+  --text-primary: #F4F7FC;
+  --text-secondary: #CBD5E3;
+  --text-muted: #8E9DB5;
+  --text-on-accent: #181F2B;
+
+  --accent-primary: #D8EDF0;
+  --accent-primary-hover: #FFFFFF;
+  --accent-secondary: #B9C8F0;
+  --accent-subtle: #2B384E;
+  --accent-warm: #E8DCC8;
+  --accent-sunshine: #F3C969;
+
+  --border-color: rgba(185, 200, 240, 0.18);
+  --border-light: rgba(216, 237, 240, 0.12);
+  --border-focus: #B9C8F0;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+
+  --gradient-coastal: linear-gradient(135deg, #181F2B 0%, #202B3C 50%, #28364E 100%);
+  --gradient-sunshine: linear-gradient(135deg, #F3C969 0%, #E6A14D 100%);
+  --gradient-hero: radial-gradient(circle at 80% 20%, rgba(53, 108, 128, 0.25) 0%, rgba(185, 200, 240, 0.12) 45%, rgba(24, 31, 43, 0) 70%),
+                   radial-gradient(circle at 10% 80%, rgba(232, 220, 200, 0.08) 0%, rgba(24, 31, 43, 0) 60%);
+}

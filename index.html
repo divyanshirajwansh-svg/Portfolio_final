@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyanshi Rajwansh — Personal Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio of Divyanshi Rajwansh — B.Tech Computer Science student at JECRC University, aspiring software engineer, and creative content creator." />
+  <meta name="author" content="Divyanshi Rajwansh" />
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Divyanshi Rajwansh — Code Meets Creator" />
+  <meta property="og:description"
+    content="Where technology meets creativity, and every idea holds a little sunshine. Explore coursework projects, algorithms, and creative work." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#FFFDF7" />
+
+  <!-- Google Fonts: Editorial Serif + Clean Modern Sans + Code Mono + Elegant Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Great+Vibes&family=Alex+Brush&family=Caveat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Early Theme Init Script (Prevents Theme Flash) -->
+  <script>
+    (function () {
+      try {
+        const saved = localStorage.getItem('divyanshi_portfolio_theme');
+        const theme = saved ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ======================================================================
+       WELCOME SCREEN: HANDWRITTEN AFFIRMATION EXPERIENCE
+       ====================================================================== -->
+  <aside class="welcome-screen" id="welcome-screen" aria-label="Welcome and daily affirmation">
+    <div class="welcome-ambient-glow" aria-hidden="true"></div>
+
+    <!-- Top Folio Bar with Gentle Reminder Label & Theme Toggle -->
+    <div class="welcome-topbar">
+      <div class="welcome-topbar-left">
+        <span class="welcome-sun-dot" aria-hidden="true">☀️</span>
+        <span class="welcome-brand-text">A Little Gentle Reminder</span>
+      </div>
+      <div class="welcome-topbar-right">
+        <button type="button" class="theme-toggle-btn welcome-theme-toggle" data-theme-toggle aria-label="Switch theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Center Stage: Motifs, Cursive Affirmation, Refresh Button, and Entry Invitation -->
+    <div class="welcome-stage">
+      <!-- Sunshine & Sparkle Motifs -->
+      <div class="welcome-motifs" aria-hidden="true">
+        <img src="images/sunshine.svg" alt="" class="welcome-sunshine-icon" width="52" height="52" />
+        <img src="images/sparkle.svg" alt="" class="welcome-sparkle welcome-sparkle-1" width="22" height="22" />
+        <img src="images/sparkle.svg" alt="" class="welcome-sparkle welcome-sparkle-2" width="18" height="18" />
+      </div>
+
+      <!-- Main Affirmation Card -->
+      <div class="welcome-affirmation-card">
+        <blockquote class="welcome-affirmation">
+          <p id="affirmation-text" class="affirmation-text">You are capable of creating things that bring light and joy
+            to others.</p>
+        </blockquote>
+
+        <!-- Understated Control: "Another little reminder" -->
+        <button type="button" class="welcome-refresh-btn" id="welcome-refresh-btn"
+          aria-label="Show another affirmation">
+          <span class="refresh-sparkle" aria-hidden="true">✦</span>
+          <span>Another little reminder</span>
+        </button>
+      </div>
+
+      <!-- Small Handwritten-Style Entry Text (Delicate text invitation, NOT a large button) -->
+      <div class="welcome-entry-container">
+        <a href="#home" class="welcome-entry-link" id="welcome-entry-link" role="button"
+          aria-label="Enter Divyanshi's portfolio">
+          <span>Enter my little world</span>
+          <span class="entry-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Footer Annotation -->
+    <div class="welcome-footer" aria-hidden="true">
+      <span class="welcome-footer-tag">Divyanshi Rajwansh · Creative Portfolio</span>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="#home" class="brand-link" aria-label="Divyanshi Rajwansh Home">
+          <img src="images/sunshine.svg" alt="" class="sun-icon" aria-hidden="true" width="24" height="24" />
+          <span>Divyanshi</span>
+        </a>
+
+        <!-- Desktop & Mobile Navigation Links -->
+        <div class="nav-menu-wrapper" id="primary-nav">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="assets.html" class="nav-link">Creator Assets</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <!-- Theme Toggle Button -->
+            <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Switch theme"
+              aria-pressed="false" id="theme-toggle">
+              <!-- Moon Icon for Light Mode -->
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+              <!-- Sun Icon for Dark Mode -->
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-nav"
+          aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ------------------------------------------------------------------
+         HERO SECTION: FIRST IMPRESSION
+         ------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------
+         HERO SECTION: EDITORIAL PINTEREST-INSPIRED VISUAL COVER
+         ------------------------------------------------------------------ -->
+    <header class="hero-section editorial-hero" id="home">
+      <!-- Ambient Coastal Glow Backdrop -->
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+      <!-- Playful Hero Background Doodles (Thin navy, crisp white, yellow accents) -->
+      <div class="hero-doodles-backdrop" aria-hidden="true">
+        <!-- Sun doodle in upper right -->
+        <img src="images/doodle-sun.svg" alt="" class="hero-doodle bg-doodle-sun" width="68" height="68" />
+        <!-- Dotted sweeping path across upper left -->
+        <img src="images/doodle-trail.svg" alt="" class="hero-doodle bg-doodle-trail-left" width="130" height="65" />
+        <!-- Radiant starburst near left flank -->
+        <img src="images/doodle-starburst.svg" alt="" class="hero-doodle bg-doodle-starburst-left" width="36" height="36" />
+        <!-- Delicate sketch heart near introduction card -->
+        <img src="images/doodle-heart.svg" alt="" class="hero-doodle bg-doodle-heart-left" width="30" height="30" />
+        <!-- Radiant starburst in upper right -->
+        <img src="images/doodle-starburst.svg" alt="" class="hero-doodle bg-doodle-starburst-right" width="40" height="40" />
+        <!-- Four-point star near right flank -->
+        <img src="images/sparkle.svg" alt="" class="hero-sparkle bg-doodle-sparkle-right" width="26" height="26" />
+      </div>
+
+      <div class="container hero-container">
+
+        <!-- Micro Top Folio (Positioned high up, zero vertical waste) -->
+        <div class="hero-top-folio" aria-hidden="true">
+          <span class="editorial-kicker">
+            <span class="editorial-sun-dot">☀️</span>
+            <span>PORTFOLIO // VOL. 2026 · JECRC UNIVERSITY, JAIPUR</span>
+          </span>
+        </div>
+
+        <!-- Flowing Signature Headline across the Upper Hero (Layered behind the portrait) -->
+        <div class="hero-signature-banner" aria-label="Divyanshi Rajwansh">
+          <h1 class="hero-signature-headline">Divyanshi Rajwansh</h1>
+          <!-- Four-point star sparkles & hand-drawn doodles around the name -->
+          <img src="images/sparkle.svg" alt="" class="hero-sparkle headline-sparkle-left" aria-hidden="true" width="22" height="22" />
+          <img src="images/doodle-starburst.svg" alt="" class="hero-doodle headline-starburst-left" aria-hidden="true" width="24" height="24" />
+          <img src="images/sparkle.svg" alt="" class="hero-sparkle headline-sparkle-right" aria-hidden="true" width="26" height="26" />
+          <img src="images/doodle-heart.svg" alt="" class="hero-doodle headline-heart-right" aria-hidden="true" width="22" height="22" />
+        </div>
+
+        <!-- The 3-Column Editorial Stage -->
+        <div class="editorial-stage">
+
+          <!-- Left Column: Supporting Introduction & Action Buttons beneath it -->
+          <div class="editorial-flank flank-left">
+            <!-- Introduction Card -->
+            <aside class="editorial-card glass-panel-editorial intro-card" aria-label="Introduction">
+              <div class="card-badge">
+                <span class="card-badge-icon">✨</span>
+                <span>INTRODUCTION</span>
+              </div>
+              <img src="images/doodle-heart.svg" alt="" class="hero-doodle intro-doodle-heart" aria-hidden="true" width="18" height="18" />
+              <p class="intro-description">
+                I'm a computer science student exploring software development while expressing my creativity through
+                digital media. Building with code, creating with purpose, and finding a little sunshine in the process.
+              </p>
+              <div class="intro-meta-foot">
+                <span class="meta-location-dot"></span>
+                <span>Jaipur &amp; Nainital, India</span>
+              </div>
+            </aside>
+
+            <!-- Buttons beneath the Introduction (Requirement 4 & 8) -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+                <span>Explore My Work</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="#about" class="btn btn-secondary" id="hero-cta-about">Get to Know Me</a>
+            </div>
+          </div>
+
+          <!-- Center Column: Photographic Cutout overlapping headline with Dotted Silhouette Outline -->
+          <div class="editorial-portrait-centerpiece">
+            <!-- Ambient Soft Halo -->
+            <div class="portrait-halo" aria-hidden="true"></div>
+
+            <!-- Hand-drawn Sunshine Motif near the top of the portrait -->
+            <div class="portrait-sunshine-badge" aria-hidden="true">
+              <img src="images/sunshine.svg" alt="" class="portrait-sunshine-icon" width="46" height="46" />
+            </div>
+
+            <!-- Central Portrait Cutout Frame with Dotted Silhouette Outline & Cutout -->
+            <div class="editorial-portrait-cutout-frame">
+              <!-- Dotted Hand-Drawn Silhouette Doodle Layer (traces exact human contour) -->
+              <img src="images/silhouette-doodle.svg" alt="" class="editorial-silhouette-doodle-overlay" aria-hidden="true" width="1200" height="1600" />
+
+              <!-- Genuine Transparent Portrait Cutout (layered above outline) -->
+              <picture class="editorial-portrait-picture">
+                <source srcset="images/me-cutout.webp" type="image/webp" />
+                <img src="images/me-cutout.png" onerror="this.onerror=null; this.src='images/me.jpeg';"
+                  alt="Portrait of Divyanshi Rajwansh" class="editorial-portrait-cutout-img" id="hero-portrait"
+                  width="1200" height="1600" loading="eager" />
+              </picture>
+            </div>
+
+            <!-- Dotted curved doodle trail & accent sparkles around portrait -->
+            <img src="images/doodle-trail.svg" alt="" class="hero-doodle centerpiece-doodle-trail" aria-hidden="true" width="68" height="34" />
+            <img src="images/sparkle.svg" alt="" class="hero-sparkle hero-sparkle-center" aria-hidden="true" width="24" height="24" />
+          </div>
+
+          <!-- Right Column: Designation Card & Lower-Right Tagline -->
+          <div class="editorial-flank flank-right">
+            <!-- Designation Card -->
+            <aside class="editorial-card glass-panel-editorial designation-card" aria-label="Designation">
+              <div class="card-badge">
+                <span class="card-badge-icon">🎓</span>
+                <span>B.TECH STUDENT</span>
+              </div>
+              <h2 class="hero-designation">Aspiring Software Engineer &nbsp;|&nbsp; Content Creator</h2>
+              <p class="hero-university-text">JECRC University, Jaipur</p>
+            </aside>
+
+            <!-- Tagline in Lower-Right with handwritten font, rotation, hand-drawn underline, arrow & heart -->
+            <div class="hero-tagline-wrap" aria-label="Personal Tagline">
+              <img src="images/doodle-arrow.svg" alt="" class="hero-doodle tagline-doodle-arrow" aria-hidden="true" width="52" height="30" />
+              <p class="hero-tagline">“A little bit of internet, a little bit of intelligence.”</p>
+              <svg class="hand-drawn-underline" viewBox="0 0 260 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M 4 12 Q 70 17 140 11 Q 200 6 244 13" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" />
+                <path d="M 251 7 C 249 4 245 5 245 8 C 245 11 251 14 251 14 C 251 14 257 11 257 8 C 257 5 253 4 251 7 Z"
+                  fill="currentColor" opacity="0.9" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Editorial Bottom Footer & Scroll Cue -->
+        <div class="hero-editorial-footer">
+          <a href="#projects" class="hero-scroll-cue" aria-label="Scroll to projects section">
+            <span>Discover Projects</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ------------------------------------------------------------------
+         ABOUT ME SECTION
+         ------------------------------------------------------------------ -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">About Me</p>
+          <h2 id="about-heading">Curiosity, Code &amp; Creative Energy</h2>
+          <p class="section-lead">Connecting logical problem-solving with expressive visual storytelling.</p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Card 1 -->
+          <article class="glass-panel about-card">
+            <div class="about-card-icon" aria-hidden="true">🌿</div>
+            <h3>Logical Foundations</h3>
+            <p>
+              As a Computer Science and Engineering student at JECRC University, I immerse myself in core algorithmic
+              concepts, Python programming, and modern web technologies. I believe that building solid code begins with
+              patient problem breakdown and clean architecture.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="glass-panel about-card">
+            <div class="about-card-icon" aria-hidden="true">✨</div>
+            <h3>Creative Expression</h3>
+            <p>
+              Beyond technical coursework, I am passionate about video scripting, visual aesthetics, and digital media.
+              Serving as an active member of the university's official social media team, I translate complex thoughts
+              into engaging stories, reels, and digital media.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="glass-panel about-card">
+            <div class="about-card-icon" aria-hidden="true">☀️</div>
+            <h3>Where They Meet</h3>
+            <p>
+              The same diligence needed to debug a subtle algorithm makes video editing seamless and intuitive. By
+              uniting analytical thinking with creative empathy, I aspire to develop software products that are not just
+              technically sound, but genuinely delightful to use.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SKILLS SECTION
+         ------------------------------------------------------------------ -->
+    <section class="section" id="skills" aria-labelledby="skills-heading" style="background:var(--bg-secondary);">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Capabilities</p>
+          <h2 id="skills-heading">Technical &amp; Creative Stack</h2>
+          <p class="section-lead">Verified technologies, languages, and tools supported by coursework and practical
+            implementations.</p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="glass-panel skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3>Programming &amp; Development</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li class="skill-pill"><span>🐍</span> Python (Core &amp; Algorithms)</li>
+              <li class="skill-pill"><span>⚙️</span> C Language Fundamentals</li>
+              <li class="skill-pill"><span>🧩</span> Data Structures &amp; Algorithms</li>
+              <li class="skill-pill"><span>🗄️</span> MySQL / Database Basics</li>
+              <li class="skill-pill"><span>🌱</span> Git Version Control</li>
+            </ul>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="glass-panel skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🌐</span>
+              <h3>Web Technologies</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li class="skill-pill"><span>📄</span> HTML5 &amp; Semantic Web</li>
+              <li class="skill-pill"><span>🎨</span> Vanilla CSS3 &amp; Design Systems</li>
+              <li class="skill-pill"><span>⚡</span> JavaScript (ES6+ &amp; DOM)</li>
+              <li class="skill-pill"><span>📱</span> Responsive &amp; Mobile-First Layouts</li>
+              <li class="skill-pill"><span>▲</span> Vercel Cloud Deployment</li>
+            </ul>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="glass-panel skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🤖</span>
+              <h3>AI-Assisted Development &amp; Tools</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li class="skill-pill"><span>🔍</span> Cursor AI (Context Debugging &amp; Refactoring)</li>
+              <li class="skill-pill"><span>💡</span> Prompt Engineering &amp; Problem Solving</li>
+              <li class="skill-pill"><span>💬</span> ChatGPT &amp; Google Gemini</li>
+              <li class="skill-pill"><span>🤝</span> GitHub Copilot Pair Programming</li>
+            </ul>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="glass-panel skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🎬</span>
+              <h3>Creative Content &amp; Storytelling</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li class="skill-pill"><span>✍️</span> Scriptwriting &amp; Concept Development</li>
+              <li class="skill-pill"><span>📽️</span> Video Editing (DaVinci Resolve / Premiere)</li>
+              <li class="skill-pill"><span>🎨</span> Canva Visual Composition</li>
+              <li class="skill-pill"><span>📋</span> Notion Editorial Workflow</li>
+              <li class="skill-pill"><span>📢</span> University Social Media Production</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         PROJECTS SECTION (SEARCH & FILTER)
+         ------------------------------------------------------------------ -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Coursework &amp; Practicals</p>
+          <h2 id="projects-heading">Featured Projects</h2>
+          <p class="section-lead">Explore five verified implementations from coursework, AI refactoring labs, and web
+            practicals.</p>
+        </header>
+
+        <!-- Search and Filter Toolbar -->
+        <div class="project-toolbar" role="search" aria-label="Project filter and search">
+          <!-- Search Field -->
+          <div class="search-bar-wrapper">
+            <svg class="search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="search" id="project-search-input" class="search-input"
+              placeholder="Search by title, tag, or keyword (try 'Python', 'Quiz', 'Book')..." autocomplete="off"
+              aria-label="Search project cards" />
+            <button type="button" id="project-search-clear" class="search-clear-btn"
+              aria-label="Clear search input">×</button>
+          </div>
+
+          <!-- Category Pills & Result Counter -->
+          <div class="filter-pills-row">
+            <button type="button" class="filter-pill-btn active" data-filter-category="all">All Projects (5)</button>
+            <button type="button" class="filter-pill-btn" data-filter-category="python">Python Algorithms (2)</button>
+            <button type="button" class="filter-pill-btn" data-filter-category="ai">AI &amp; Debugging (1)</button>
+            <button type="button" class="filter-pill-btn" data-filter-category="web">Web &amp; Practicals (2)</button>
+
+            <span class="filter-results-counter" id="projects-results-counter" aria-live="polite">Showing 5 of 5
+              projects</span>
+          </div>
+        </div>
+
+        <!-- Rendered Project Cards Grid -->
+        <div class="project-grid" id="projects-grid" aria-label="Project cards list"></div>
+
+        <!-- Empty State (Shown when search has no matches) -->
+        <div class="empty-search-state glass-panel" id="projects-empty-state" style="display:none;" role="status">
+          <img src="images/sunshine.svg" alt="" class="empty-search-icon" aria-hidden="true" width="56" height="56" />
+          <h3>No matching projects found</h3>
+          <p>Try searching for “Python”, “Quiz”, “Book”, or resetting your category filter.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         CONTACT SECTION
+         ------------------------------------------------------------------ -->
+    <section class="section" id="contact" aria-labelledby="contact-heading" style="background:var(--bg-secondary);">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Get in Touch</p>
+          <h2 id="contact-heading">Let’s Connect</h2>
+          <p class="section-lead">Have a question about my projects, coursework, or creative work? Drop a message or
+            find me on my verified profiles.</p>
+        </header>
+
+        <div class="contact-layout">
+          <!-- Interactive Contact Form -->
+          <form class="glass-panel contact-form" id="contact-form" novalidate aria-label="Contact Divyanshi">
+            <div class="form-field">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Sharma" required />
+              <p class="form-error" id="contact-name-error" role="alert"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@example.com" required />
+              <p class="form-error" id="contact-email-error" role="alert"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-textarea" rows="4"
+                placeholder="Hello Divyanshi, I enjoyed exploring your portfolio..." required></textarea>
+              <p class="form-error" id="contact-message-error" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+
+            <!-- Honest Feedback State -->
+            <div id="contact-feedback" class="form-feedback-box" role="status"></div>
+          </form>
+
+          <!-- Verified Information Card -->
+          <div class="glass-panel contact-info-card">
+            <h3 style="font-size:1.25rem;">Verified Details</h3>
+
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon" aria-hidden="true">📧</div>
+              <div class="contact-detail-text">
+                <h4>Email</h4>
+                <a href="mailto:divyanshirajwansh@gmail.com">divyanshirajwansh@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon" aria-hidden="true">🐙</div>
+              <div class="contact-detail-text">
+                <h4>GitHub Profile</h4>
+                <a href="https://github.com/divyanshirajwansh-svg" target="_blank"
+                  rel="noopener noreferrer">github.com/divyanshirajwansh-svg</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon" aria-hidden="true">💼</div>
+              <div class="contact-detail-text">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/divyanshi-rajwansh-4464b9283" target="_blank"
+                  rel="noopener noreferrer">linkedin.com/in/divyanshi-rajwansh</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon" aria-hidden="true">📍</div>
+              <div class="contact-detail-text">
+                <h4>Location</h4>
+                <p>JECRC University, Jaipur &amp; Nainital, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       INTERACTIVE MODAL OVERLAYS (Demo Walkthroughs)
+       ====================================================================== -->
+  <div class="modal-overlay" id="demo-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title">
+    <div class="modal-box" id="demo-modal-box">
+      <button type="button" class="modal-close-btn" id="demo-modal-close" aria-label="Close modal dialog">×</button>
+      <div id="demo-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       SKY AI CHATBOT (Friendly & Optimistic Companion)
+       ====================================================================== -->
+  <!-- Floating Launcher Trigger -->
+  <button type="button" class="sky-chat-launcher" id="sky-chat-launcher" aria-label="Open Sky AI portfolio assistant"
+    aria-haspopup="dialog">
+    <div class="launcher-avatar" aria-hidden="true">☀️</div>
+    <div class="launcher-text">
+      <span class="launcher-name">Chat with Sky</span>
+      <span class="launcher-sub">AI Companion · Ask me anything</span>
+    </div>
+  </button>
+
+  <!-- Floating Chat Window / Mobile Drawer -->
+  <div class="sky-chat-window" id="sky-chat-window" role="dialog" aria-label="Sky AI Portfolio Assistant"
+    aria-hidden="true">
+    <!-- Header -->
+    <div class="sky-chat-header">
+      <div class="header-left">
+        <div class="chat-bot-avatar" aria-hidden="true">☀️</div>
+        <div class="header-details">
+          <h3>Sky</h3>
+          <div class="header-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Active &amp; Grounded</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="chat-close-btn" id="sky-chat-close" aria-label="Close Sky chat">×</button>
+    </div>
+
+    <!-- Messages Container -->
+    <div class="sky-chat-messages" id="sky-chat-messages" role="log" aria-live="polite"></div>
+
+    <!-- Suggested Question Chips -->
+    <div class="chat-suggestions-box" id="sky-chat-suggestions" aria-label="Suggested questions"></div>
+
+    <!-- Chat Input Form -->
+    <form class="sky-chat-input-bar" id="sky-chat-form">
+      <input type="text" id="sky-chat-input" class="chat-input"
+        placeholder="Ask Sky about Divyanshi's projects or skills..." autocomplete="off" maxlength="300"
+        aria-label="Your message to Sky" />
+      <button type="submit" class="chat-send-btn" id="sky-chat-send" aria-label="Send message">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="22" y1="2" x2="11" y2="13" />
+          <polygon points="22 2 15 22 11 13 2 9 22 2" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span>☀️ Divyanshi Rajwansh</span>
+        </div>
+        <p class="footer-copy">© 2026 Divyanshi Rajwansh · B.Tech CSE (Core) · JECRC University</p>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="assets.html">Creator Assets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/sky-chat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

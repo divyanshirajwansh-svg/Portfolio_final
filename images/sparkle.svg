@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2C12 7.5 7.5 12 2 12C7.5 12 12 16.5 12 22C12 16.5 16.5 12 22 12C16.5 12 12 7.5 12 2Z" fill="url(#sparkle-grad)" />
+  <defs>
+    <linearGradient id="sparkle-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#356C80" />
+      <stop offset="0.5" stop-color="#B9C8F0" />
+      <stop offset="1" stop-color="#F9D976" />
+    </linearGradient>
+  </defs>
+</svg>

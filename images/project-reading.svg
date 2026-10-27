@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" rx="16" fill="url(#bg-rd)" />
+  <defs>
+    <linearGradient id="bg-rd" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8DCC8" />
+      <stop offset="1" stop-color="#B9C8F0" />
+    </linearGradient>
+    <filter id="shadow-rd" x="-6" y="-3" width="310" height="190" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#30394B" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <!-- Reading List Manager Card -->
+  <g filter="url(#shadow-rd)" transform="translate(50, 30)">
+    <rect width="300" height="180" rx="14" fill="#FFFDF7" stroke="#356C80" stroke-width="1.2" stroke-opacity="0.2" />
+    <text x="24" y="32" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#356C80">Book Reading Tracker</text>
+    
+    <!-- Filter Pills in Card -->
+    <g transform="translate(24, 42)">
+      <rect width="35" height="16" rx="8" fill="#356C80" />
+      <text x="10" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#FFFDF7" font-weight="600">All (8)</text>
+
+      <rect x="42" width="55" height="16" rx="8" fill="#D8EDF0" />
+      <text x="50" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#356C80">Reading (2)</text>
+
+      <rect x="104" width="56" height="16" rx="8" fill="#FFFDF7" stroke="#E8DCC8" />
+      <text x="112" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#5F708A">Finished (5)</text>
+    </g>
+
+    <!-- Book Row 1 -->
+    <g transform="translate(24, 72)">
+      <rect width="252" height="38" rx="8" fill="#F4F8FA" stroke="#D8EDF0" stroke-width="1" />
+      <rect x="10" y="7" width="18" height="24" rx="3" fill="#356C80" />
+      <text x="36" y="19" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#30394B">Clean Code · Robert C. Martin</text>
+      <text x="36" y="31" font-family="system-ui, sans-serif" font-size="8" fill="#5F708A">Status: Finished ★★★★★</text>
+      <rect x="200" y="11" width="42" height="16" rx="8" fill="#A8D5BA" fill-opacity="0.4" />
+      <text x="208" y="22" font-family="system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#2E7D52">Completed</text>
+    </g>
+
+    <!-- Book Row 2 -->
+    <g transform="translate(24, 118)">
+      <rect width="252" height="38" rx="8" fill="#FFFDF7" stroke="#E8DCC8" stroke-width="1" />
+      <rect x="10" y="7" width="18" height="24" rx="3" fill="#B9C8F0" />
+      <text x="36" y="19" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#30394B">Grokking Algorithms · Aditya Bhargava</text>
+      <text x="36" y="31" font-family="system-ui, sans-serif" font-size="8" fill="#5F708A">Status: Currently Reading (p. 142)</text>
+      <rect x="200" y="11" width="42" height="16" rx="8" fill="#F9D976" fill-opacity="0.4" />
+      <text x="209" y="22" font-family="system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#9E6D18">Reading</text>
+    </g>
+
+    <text x="24" y="170" font-family="system-ui, sans-serif" font-size="8" fill="#356C80" font-weight="600">Lecture 11 Practical · Persistent Storage</text>
+  </g>
+</svg>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creator Assets — Divyanshi Rajwansh</title>
+  <meta name="description" content="Visual media assets, design boards, and creative storytelling stack by Divyanshi Rajwansh." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: var(--space-xl);
+      margin-bottom: var(--space-3xl);
+    }
+    .asset-card {
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .asset-preview-box {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      border-radius: var(--radius-md);
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.25rem;
+      margin-bottom: var(--space-xs);
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: var(--space-lg);
+      margin-bottom: var(--space-3xl);
+    }
+    .synergy-card {
+      padding: var(--space-2xl);
+      border-radius: var(--radius-xl);
+      background: var(--gradient-coastal);
+      border: 1px solid var(--border-light);
+      margin-bottom: var(--space-3xl);
+    }
+    [data-theme="dark"] .synergy-card {
+      background: var(--bg-card);
+    }
+  </style>
+
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('divyanshi_portfolio_theme');
+        const theme = saved ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="index.html#home" class="brand-link" aria-label="Divyanshi Rajwansh Home">
+          <img src="images/sunshine.svg" alt="" class="sun-icon" aria-hidden="true" width="24" height="24" />
+          <span>Divyanshi</span>
+        </a>
+
+        <div class="nav-menu-wrapper" id="primary-nav">
+          <ul class="nav-links">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About Me</a></li>
+            <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="assets.html" class="nav-link active">Creator Assets</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Switch theme" aria-pressed="false">
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container section">
+      <header class="section-header">
+        <p class="section-kicker">Creative Portfolio</p>
+        <h1>Content Creator &amp; Skill Assets</h1>
+        <p class="section-lead">Design boards, reel concepts, script drafts, and the tools powering campus digital storytelling.</p>
+      </header>
+
+      <!-- Asset Grid -->
+      <div class="asset-grid">
+        <article class="glass-panel asset-card">
+          <div class="asset-preview-box">🎨</div>
+          <span class="tag-badge" style="width:fit-content;">Visual Design</span>
+          <h3>Layout &amp; UI Boards</h3>
+          <p>Thumbnail composition studies, visual color palettes, and interface sketches bridging user emotion with clean typography.</p>
+        </article>
+
+        <article class="glass-panel asset-card">
+          <div class="asset-preview-box">🎬</div>
+          <span class="tag-badge" style="width:fit-content;">Video Editing</span>
+          <h3>Reels &amp; Timeline Frames</h3>
+          <p>Pacing notes, lower thirds, and dynamic cut structures created for the official university social media channels.</p>
+        </article>
+
+        <article class="glass-panel asset-card">
+          <div class="asset-preview-box">☀️</div>
+          <span class="tag-badge" style="width:fit-content;">Brand Kit</span>
+          <h3>Sunshine Aesthetic Identity</h3>
+          <p>Curated periwinkle, sea-glass blue, warm sand beige, and sunshine gold representing optimism and engineering ambition.</p>
+        </article>
+
+        <article class="glass-panel asset-card">
+          <div class="asset-preview-box">✍️</div>
+          <span class="tag-badge" style="width:fit-content;">Writing &amp; Media</span>
+          <h3>Scripts &amp; Storyboards</h3>
+          <p>Engaging video narratives, dialogue scripts for campus festivals, and accessible technical explainers.</p>
+        </article>
+      </div>
+
+      <!-- Tools Used -->
+      <header class="section-header">
+        <p class="section-kicker">Workflow</p>
+        <h2>Creative Production Stack</h2>
+        <p class="section-lead">Everyday software for visual design, video editing, and workflow organization.</p>
+      </header>
+
+      <div class="tool-grid">
+        <article class="glass-panel asset-card">
+          <div style="font-size:1.8rem; margin-bottom:4px;">🎞️</div>
+          <h3>DaVinci / Premiere</h3>
+          <p>Color grading, precise pacing, and audio synchronization for short-form university reels.</p>
+        </article>
+
+        <article class="glass-panel asset-card">
+          <div style="font-size:1.8rem; margin-bottom:4px;">✨</div>
+          <h3>Canva</h3>
+          <p>Fast visual drafts, typography pairings, and promotional social post layouts.</p>
+        </article>
+
+        <article class="glass-panel asset-card">
+          <div style="font-size:1.8rem; margin-bottom:4px;">📐</div>
+          <h3>Figma</h3>
+          <p>Component wireframes, spacing scales, and layout prototyping before coding.</p>
+        </article>
+
+        <article class="glass-panel asset-card">
+          <div style="font-size:1.8rem; margin-bottom:4px;">📝</div>
+          <h3>Notion</h3>
+          <p>Content calendars, script drafts, and editorial checklists in one unified workspace.</p>
+        </article>
+      </div>
+
+      <!-- Synergy Banner -->
+      <div class="synergy-card">
+        <p class="section-kicker">TECH MEETS CREATOR</p>
+        <h2 style="margin-bottom:var(--space-sm);">Code with Empathy, Create with Logic</h2>
+        <p style="font-size:1.0625rem; line-height:1.7; max-width:820px; color:var(--text-primary);">
+          “Writing code and crafting video stories share the same rhythm: break down complex thoughts into clear components, test each transition, and deliver an experience that feels effortless to the person on the other end. Whether refactoring a Python function or cutting a campus documentary reel, every detail matters.”
+        </p>
+        <div style="margin-top:var(--space-lg);">
+          <a href="index.html#projects" class="btn btn-primary">Back to Projects</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sky Chatbot Floating Launcher -->
+  <button type="button" class="sky-chat-launcher" id="sky-chat-launcher" aria-label="Open Sky AI portfolio assistant" aria-haspopup="dialog">
+    <div class="launcher-avatar" aria-hidden="true">☀️</div>
+    <div class="launcher-text">
+      <span class="launcher-name">Chat with Sky</span>
+      <span class="launcher-sub">AI Companion · Ask me anything</span>
+    </div>
+  </button>
+
+  <!-- Sky Chatbot Window -->
+  <div class="sky-chat-window" id="sky-chat-window" role="dialog" aria-label="Sky AI Portfolio Assistant" aria-hidden="true">
+    <div class="sky-chat-header">
+      <div class="header-left">
+        <div class="chat-bot-avatar" aria-hidden="true">☀️</div>
+        <div class="header-details">
+          <h3>Sky</h3>
+          <div class="header-status"><span class="status-dot"></span><span>Active &amp; Grounded</span></div>
+        </div>
+      </div>
+      <button type="button" class="chat-close-btn" id="sky-chat-close" aria-label="Close Sky chat">×</button>
+    </div>
+    <div class="sky-chat-messages" id="sky-chat-messages" role="log" aria-live="polite"></div>
+    <div class="chat-suggestions-box" id="sky-chat-suggestions"></div>
+    <form class="sky-chat-input-bar" id="sky-chat-form">
+      <input type="text" id="sky-chat-input" class="chat-input" placeholder="Ask Sky about Divyanshi's work..." autocomplete="off" />
+      <button type="submit" class="chat-send-btn" id="sky-chat-send" aria-label="Send message">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>
+      </button>
+    </form>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span>☀️ Divyanshi Rajwansh</span></div>
+        <p class="footer-copy">© 2026 Divyanshi Rajwansh · B.Tech CSE (Core) · JECRC University</p>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="assets.html">Creator Assets</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/sky-chat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

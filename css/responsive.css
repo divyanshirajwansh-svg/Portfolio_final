@@ -1,0 +1,331 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN - DIVYANSHI RAJWANSH PORTFOLIO
+   Mobile, Tablet, and Desktop Breakpoint Optimizations
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLET & LAPTOP (Max-Width: 1100px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .editorial-stage {
+    grid-template-columns: minmax(220px, 1fr) auto minmax(230px, 1fr);
+    gap: var(--space-md);
+  }
+
+  .hero-signature-banner {
+    margin-bottom: 0;
+    z-index: 2;
+  }
+
+  .hero-signature-headline {
+    font-size: clamp(3.2rem, 8vw, 6.8rem);
+  }
+
+  .editorial-portrait-centerpiece {
+    margin: -95px auto 0 auto;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .editorial-portrait-cutout-frame {
+    width: min(390px, 36vw);
+    height: auto;
+    aspect-ratio: 3 / 4;
+    pointer-events: none;
+  }
+
+  .flank-left {
+    max-width: 270px;
+    z-index: 10;
+  }
+
+  .flank-right {
+    max-width: 290px;
+    z-index: 10;
+  }
+
+  .intro-description {
+    font-size: 0.875rem;
+  }
+
+  .hero-designation {
+    font-size: 0.95rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE NAVIGATION & SMALL SCREENS (Max-Width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --space-4xl: 4rem;
+    --space-3xl: 3rem;
+  }
+
+  .container {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu-wrapper {
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    background: var(--bg-glass-heavy);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1.5px solid var(--border-color);
+    padding: var(--space-xl) var(--space-lg);
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-lg);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-normal), opacity var(--transition-normal);
+    z-index: 99;
+  }
+
+  .nav-menu-wrapper.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-xs);
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .nav-link:hover {
+    background: var(--accent-subtle);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-actions {
+    justify-content: space-between;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border-color);
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-results-counter {
+    width: 100%;
+    margin-left: 0;
+    margin-top: var(--space-2xs);
+  }
+
+  /* Editorial Hero on Mobile */
+  .editorial-hero {
+    min-height: auto;
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .hero-editorial-topbar {
+    margin-bottom: var(--space-md);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+  }
+
+  .editorial-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-lg);
+    padding: var(--space-xs) 0;
+    min-height: auto;
+  }
+
+  .hero-signature-banner {
+    margin-bottom: -45px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-signature-headline {
+    font-size: clamp(2.8rem, 10.5vw, 4.6rem);
+    white-space: normal;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .editorial-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-lg);
+    padding: var(--space-xs) 0;
+    min-height: auto;
+  }
+
+  .editorial-portrait-centerpiece {
+    margin: 0 auto var(--space-md) auto;
+    order: 0;
+    width: 100%;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .editorial-portrait-cutout-frame {
+    width: min(320px, 78vw);
+    height: auto;
+    aspect-ratio: 3 / 4;
+    pointer-events: none;
+  }
+
+  .centerpiece-doodle-trail,
+  .bg-doodle-trail-left {
+    display: none;
+  }
+
+  .editorial-flank {
+    width: 100%;
+    max-width: 420px;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    z-index: 10;
+  }
+
+  .flank-left {
+    order: 1;
+  }
+
+  .flank-right {
+    order: 2;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-tagline-wrap {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-tagline {
+    transform: none;
+    text-align: center;
+  }
+
+  .hand-drawn-underline {
+    margin: 0 auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Sky Chatbot on Mobile: Bottom Sheet */
+  .sky-chat-launcher {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1rem 0.6rem 0.7rem;
+  }
+
+  .sky-chat-window {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 82vh;
+    max-height: 85vh;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    border-bottom: none;
+  }
+
+  .modal-box {
+    padding: var(--space-lg);
+    max-height: 94vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-signature-banner {
+    margin-bottom: -35px;
+    z-index: 2;
+  }
+
+  .hero-signature-headline {
+    font-size: clamp(2.3rem, 9.5vw, 3.4rem);
+  }
+
+  .editorial-portrait-centerpiece {
+    margin: 0 auto var(--space-sm) auto;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .editorial-portrait-cutout-frame {
+    width: min(270px, 82vw);
+    height: auto;
+    aspect-ratio: 3 / 4;
+    pointer-events: none;
+  }
+
+  .hero-tagline {
+    font-size: 1.15rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .filter-pills-row {
+    gap: 0.35rem;
+  }
+
+  .filter-pill-btn {
+    font-size: 0.8125rem;
+    padding: 0.35rem 0.75rem;
+  }
+}
